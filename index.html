@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى رُبى ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+min-height:100vh;
+overflow-x:hidden;
+color:white;
+
+background:
+radial-gradient(circle at 20% 20%, rgba(255,182,193,.45), transparent 40%),
+radial-gradient(circle at 80% 25%, rgba(186,85,211,.35), transparent 40%),
+radial-gradient(circle at 50% 85%, rgba(255,105,180,.25), transparent 45%),
+linear-gradient(180deg,#090912,#15152d,#221238);
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hearts{
+position:fixed;
+inset:0;
+pointer-events:none;
+overflow:hidden;
+}
+
+.heart{
+position:absolute;
+animation:floatHeart linear forwards;
+}
+
+@keyframes floatHeart{
+from{
+transform:translateY(100vh) scale(.8);
+opacity:0;
+}
+10%{
+opacity:1;
+}
+to{
+transform:translateY(-10vh) scale(1.4);
+opacity:0;
+}
+}
+
+.container{
+width:min(900px,92%);
+padding:25px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(16px);
+border-radius:28px;
+padding:35px;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+#start{
+text-align:center;
+}
+
+h1{
+font-size:34px;
+color:#ffbfdc;
+margin-bottom:20px;
+}
+
+button{
+border:none;
+cursor:pointer;
+padding:15px 30px;
+font-size:18px;
+border-radius:16px;
+color:white;
+background:linear-gradient(135deg,#ff4da6,#c77dff);
+}
+
+#message{
+display:none;
+}
+
+#text{
+white-space:pre-line;
+line-height:2.3;
+font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="music" autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+<div class="card" id="start">
+<h1>❤️ إلى رُبى ❤️</h1>
+<button onclick="openMessage()">💌 افتحي الرسالة</button>
+</div>
+
+<div class="card" id="message">
+<div id="text"></div>
+</div>
+
+</div>
+
+<script>
+
+window.onload=()=>{
+document.getElementById("music").play().catch(()=>{});
+};
+
+const msg=`هالرسالة رح تكون أصعب شي قرأتيه مني.
+
+اليوم …
+أنا عم اترك وراي نسخة مني كانت قريبة من كل شي اسمو “إنتِ”.
+
+أنا مش عم بالغ،
+ولا عم حاول أعمل لحظة درامية…
+بس الحقيقة إنو وجودك بحياتي كان أكبر من ما كنت مستوعب وأنا معك وجودك هوّي احلى شعور بهالدنيا
+
+رُبى ❤️
+
+اليوم مش يوم عادي أبداً…
+
+اليوم أنا مسافر،
+واليوم فعليًا رح تبعد المسافة بيني وبينك أكتر من أي وقت قبل.
+
+أنا ما عم بفل من شعوري فيكي، بس عم فل من المكان.
+
+كل شي حواليي رح يتغيّر،
+الناس، الطرق، الأيام…
+بس في شي واحد رح يضل ثابت معي حتى وأنا بعيد هو
+إنتِ.
+
+ما بعرف كيف أوصف الشعور بشكل كامل،
+بس بعرف إنو رح يضل بالي معك واثرك رح يضل مرافقني وين ما كنت
+
+اليوم وأنا عم جهّز حالي للسفر،
+كان في لحظات صمت طويلة…
+كلها كانت إلك.
+
+مش لأنو وداع،
+بس لأنو إدراك إنو في شخص رح يصير أبعد جسديًا،
+بس ما رح يطلع من قلبي.
+
+إذا مرقت عليكي أيام فيها تعب أو ضيق،
+بدي ياكِ تتذكري إنو في شخص بعيد،
+وكل تفكيره فيكي انو تكوني بخير ومبسوطة ومرتاحة.
+
+إنتِ كنتِ أمان، وراحة، وشعور حلو ما بيتنسي...
+
+أنا رح صير بعيد…
+وبعرف قديش المسافات صعبة،
+وبعرف إنو الحياة أخدت كل واحد فينا بمكان،
+بس رغم كل شي، في شعور جواتي تجاهك ما في شي بيقدر يغيّرو.
+
+كل ما بتذكرك بتذكر قديش كنتِ شخص ترك أثر حلو بحياتي، أثر ما بينمحى،
+حتى لو مرق العمر كله
+وقديش وجودك بيعمل فرق من دون ما تحسي.
+
+أنا رايح اليوم…
+والمسافة بينا رح تصير حقيقة، مش مجرد حكي.
+
+بس قبل ما أمشي،
+بدي قلك كل شي كان لازم ينقال من زمان…
+
+إنتِ مش بس شخص عرفته،
+إنتِ كنتِ الإحساس اللي خلّاني أفهم شو يعني اشتياق،
+وشو يعني إنو وجود حدا يغيّر يومك من دون ما يعمل شي.
+
+اليوم وأنا عم جهّز حالي للسفر،
+كنت عم حاول كون قوي…
+بس ما في قوة بتمنع القلب يوجع لما يبعد عن شي تعلّق فيه…
+
+أنا يمكن بفل جسديًا،
+بس في جزء مني رح يضل واقف عندك،
+ما رح يلحقني لا طيران ولا مسافة ولا وقت.
+
+إذا يوم من الأيام حسّيتي بالوحدة،
+أو حسّيتي إنو في شي ناقص ومش مفهوم،
+تذكري انو محمد حدك حتى لو كان بعيد…
+
+وإذا اشتقتي،
+ما تكرهي هالاشتياق…
+لأنو أنا كمان رح أكون مشتاق، بطريقة ما بتنعرف.
+
+إنتِ مش شخص عادي مرق بحياتي.
+إنتِ الشي الوحيد اللي كان يخلّي الأيام العادية إلها معنى
+
+بس بدي ياكِ تضلّي بخير،
+حتى لو أنا بعيد،
+
+لأنو الصعب مش إنو نسافر…
+الصعب إنو نبعد عن حدا كنا نحس إنو قريب من قلبنا أكتر من أي شي تاني.
+
+وإذا الحياة فرّقتنا كتير…
+تذكري إنو في شخص،
+حتى وهو بعيد،
+ما رح ينسى ولا لحظة كان فيها وجودك بيكفيه عن الدنيا كلها.
+
+رُبى…
+اليوم أنا ما عم بفل بس من مكان…
+أنا عم بفل من لحظة كانت بالنسبة إلي كل شي بدون ما انتبه.
+
+يمكن ما حكيتلك كل شي بوقته،
+ويمكن ضيّعت لحظات كنت لازم قول فيها أكتر…
+
+إنتِ ما كنتي عابرة بحياتي.
+إنتِ كنتِ الشعور اللي خلّاني أعرف شو يعني قلب يدقّ لحدا بصدق.
+
+اليوم وأنا عم طلع من هالمكان،
+حاسس إني عم اترك وراي جزء مني…
+مش مباني ولا شوارع…ولا رفقة…
+بس ذكريات مرتبطة فيكي إنتِ.
+
+اليوم أنا مسافر،
+ومش بس مسافر من مكان…
+أنا مسافر من لحظة كنت فيها قريب من كل شي حلو مرتبط فيكي.
+
+ديري بالك عحالك يا رُبى ❤️
+وإذا بكيتِ هلأ…
+اعرفي إنو محمد،
+مش قصده يوجعك، او يضايقك
+بس كان صادق أكتر من ما كان لازم يكون
+
+وضلك تذكري انو محمد ما رح يشيلك من قلبو..
+ولو كنت بعيد انتِ رح تضلي اقرب من قلبي الي
+
+انتبهِ عحالك و عصحتك يا قلبي وانشالله بترجع بتجمعنا الحياة مرة تانية وبحبك كتيرررر❤️❤️
+
+سامحيني💔`;
+
+let i=0;
+
+function createHeart(){
+
+const emojis=["❤️","💖","💜","🤍"];
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+heart.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(15+Math.random()*20)+"px";
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.querySelector(".hearts").appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+}
+
+setInterval(createHeart,300);
+
+function typeWriter(){
+
+if(i<msg.length){
+
+document.getElementById("text").innerHTML+=msg.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,20);
+}
+}
+
+function openMessage(){
+
+document.getElementById("start").style.display="none";
+document.getElementById("message").style.display="block";
+
+document.getElementById("music").play().catch(()=>{});
+
+typeWriter();
+}
+</script>
+
+</body>
+</html>
